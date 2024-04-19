@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Page</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./bootstrap.min.css">
+<style>
+    .card-header {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        text-decoration: solid;
+        font-weight: bold;
+    }
+    .card-body {
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .card-text {
+        text-align: justify;
+    }   
+</style> 
+</head>
+<body>
+
+<!-- Carousel de Imagens -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/11/08/23/57/flower-8376030_1280.jpg"/>
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/02/27/00/15/chrysanthemum-8599121_1280.jpg"/>
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/11/13/03/dachshund-8120554_1280.jpg"/>
+    </div>
+    </div>
+    <button data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"></button>
+    </div>
+</div>
+
+<!-- Layout com Grid Responsivo -->
+<div class="container mt-5">
+    <div class="row text-white text-bg-dark justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+        <div class="card h-100">
+            <div class="card-header">
+                Lavanda
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2023/06/19/18/02/lavender-8075280_1280.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Abelhas</h5>
+            <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo est at dolor lacinia</p>
+            <a href="#" class="btn btn-dark">Botão link</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <div class="card-header">
+                Hamburgo
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2024/02/14/13/13/hamburg-8573427_960_720.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Arquitetura</h5>
+            <p class="card-text text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <a href="#" class="btn btn-dark">Botão link</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <div class="card-header">
+                Japão
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2023/04/05/09/17/spring-7901015_1280.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Spring</h5>
+            <p class="card-text text-white">Fusce nec arcu vel nisl sagittis elementum. Mauris pretium id enim ac dapibus.</p>
+            <a href="#" class="btn btn-dark">Botão link</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Bootstrap JS (opcional, necessário apenas para funcionalidades como o Carousel) -->
+<script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
